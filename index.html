@@ -153,7 +153,7 @@
         <p><strong>Herramientas utilizadas:</strong> Apache Spark 3.x · PySpark · Spark SQL · Spark MLlib · 
           Python · Pandas · Matplotlib · Google Colab · Parquet · GitHub</p>
         <p><strong>Aprendizajes:</strong></p>
-            <ol>
+            <ul>
               <li>Comprender la diferencia de paradigma entre procesamiento tradicional y distribuido: pensar en particiones,
                 DAGs y lazy evaluation en lugar de operaciones fila a fila</li>
               <li>Diseñar pipelines de ML reproducibles donde el preprocesamiento y el modelo viajan juntos como un objeto 
@@ -161,8 +161,16 @@
               <li>Traducir métricas técnicas (AUC, Silhouette Score) en lenguaje de negocio accionable para stakeholders no técnicos</li>
               <li>Aplicar una mentalidad data-driven desde la definición del problema: no construir modelos por construirlos,
                  sino partir de preguntas de negocio claras</li>
-            </ol>
-        <p><strong>Métricas de impacto:</strong> Ej. optimización de tiempos, mejora en organización, mayor claridad en procesos.</p>
+            </ul>
+        <p><strong>Métricas de impacto:</strong></p>
+            <ul>
+              <li><strong>Volumen procesado:</strong> 112,372 registros combinados de 3 fuentes</li>
+              <li><strong>Reducción de recomputación:</strong> Cache/persist evitó releer CSVs en múltiples consultas SQL</li>
+              <li><strong>Precisión del modelo supervisado:</strong> ~73% de accuracy · AUC-ROC > 0.70</li>
+              <li><strong>Calidad del clustering:</strong> Silhouette Score ~0.45 con k=4 validado por Elbow Method</li>
+              <li><strong>Hallazgo logístico clave:</strong> Pedidos retrasados tienen 36% menos satisfacción (score 2.7 vs 4.2)</li>
+              <li><strong>Segmentos accionables:</strong> 4 clusters con estrategias diferenciadas para marketing</li>
+            </ul>
         <p><strong>Habilidades aplicadas:</strong> 
             Big Data · Apache Spark · PySpark · RDDs · DataFrames · Spark SQL · Machine Learning Escalable · Feature 
             Engineering · Visualización de datos · Documentación técnica · Pensamiento analítico orientado a negocio</p>
