@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luis León | Portafolio Profesional</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0d6efd, #0b3d91);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .section-title {
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+    .card {
+      border: none;
+      border-radius: 16px;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s ease;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 30px 0;
+      margin-top: 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Luis Felipe León Barrera</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#caso-estudio">Caso de estudio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Portafolio Profesional</h1>
+      <p class="lead">Product Owner | Transformación digital | Gestión de productos y equipos ágiles</p>
+      <p>
+        Profesional orientado a la gestión de productos digitales, mejora de procesos y trabajo colaborativo,
+        con experiencia en entornos tecnológicos y enfoque en generar valor para usuarios y negocio.
+      </p>
+    </div>
+  </header>
+
+  <section id="sobre-mi" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center">Sobre mí</h2>
+      <p class="text-center">
+        Soy Ingeniero Civil Industrial con experiencia en productos digitales, transformación digital y trabajo con equipos ágiles.
+        Mi enfoque profesional está en Product Owner, combinando visión de negocio, análisis de problemas y coordinación interdisciplinaria
+        para impulsar soluciones con impacto.
+      </p>
+    </div>
+  </section>
+
+  <section id="proyectos" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center">Proyectos Destacados</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title">Retail Analytics Pipeline</h5>
+              <p class="card-text">
+                Desarrollo de un pipeline de Big Data y ML escalable para un análisis de retail.
+              </p>
+              <a href="https://github.com/luisleonb/Proyecto_M9_ABP.git" class="btn btn-primary" target="_blank">Ver repositorio</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title">Clasificador inteligente de imágenes de ropa</h5>
+              <p class="card-text">
+                Modelo de redes neuronales capaz de clasificar imágenes de prendas de vestir en sus respectivas categorías.
+              </p>
+              <a href="https://github.com/luisleonb/Proyecto_M8_ABP.git" class="btn btn-primary" target="_blank">Ver repositorio</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title">Análisis estadístico sobre hábitos saludables</h5>
+              <p class="card-text">
+                Mediante inferencia pruebas de hipótesis se evalúan los hábitos saludables de los jóvenes de una determinada universidad.
+              </p>
+              <a href="https://github.com/luisleonb/Proyecto-Modulo-5-ABP.git" class="btn btn-primary" target="_blank">Ver repositorio</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="caso-estudio" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center">Caso de Estudio</h2>
+      <div class="card shadow p-4">
+        <h3>Retail Analytics Pipeline — Big Data con Apache Spark</h3>
+        <p><strong>Descripción:</strong> Diseño e implementación de un pipeline de Big Data end-to-end para 
+          la empresa ficticia RetailMax, una plataforma de e-commerce con millones de transacciones diarias. 
+          El proyecto procesó más de 112,000 registros combinados de órdenes, ítems y reseñas de clientes 
+          utilizando Apache Spark, generando métricas de negocio accionables y modelos de Machine Learning 
+          escalables para clasificación y segmentación de usuarios.</p>
+        <p><strong>Desafío principal:</strong> El área de analítica enfrentaba un proceso de análisis lento 
+          y fragmentado: los datos de compras, reseñas y comportamiento de clientes estaban distribuidos en 
+          múltiples fuentes sin integración, y los modelos de ML tradicionales no podían escalar al volumen 
+          real del negocio. El desafío técnico era construir un sistema distribuido capaz de ingestar, 
+          transformar y modelar datos masivos de forma eficiente, mientras el desafío de negocio era traducir 
+          esos datos en decisiones concretas para marketing y logística.</p>
+        <p><strong>Solución propuesta:</strong> Se diseñó un pipeline progresivo de 5 etapas sobre PySpark, 
+          estructurado como un flujo de valor de datos de punta a punta:</p>
+            <ol>
+              <li><strong>Ingesta y configuración</strong> de SparkSession optimizada con AQE y esquemas explícitos</li>
+              <li><strong>Exploración con RDDs</strong>, aplicando transformaciones lazy (map, filter, reduceByKey) 
+                y documentando el linaje del DAG</li>
+              <li><strong>Análisis con Spark SQL y DataFrames</strong>, con feature engineering (is_delayed, 
+                delivery_days, high_satisfaction) y 5 consultas de métricas de negocio</li>
+              <li><strong>Persistencia en Parquet</strong> como formato columnar para optimizar la capa de ML</li>
+              <li><strong>Pipeline de MLlib</strong> con Regresión Logística (clasificación binaria de satisfacción) y K-Means 
+                (segmentación en 4 clusters de clientes), evaluados con AUC-ROC, F1-Score y Silhouette Score</li>
+            </ol>
+        <p>El enfoque priorizó decisiones técnicas justificadas desde el negocio: cada transformación respondía a una pregunta analítica concreta.</p>
+        <p><strong>Herramientas utilizadas:</strong> Apache Spark 3.x · PySpark · Spark SQL · Spark MLlib · 
+          Python · Pandas · Matplotlib · Google Colab · Parquet · GitHub</p>
+        <p><strong>Aprendizajes:</strong></p>
+            <ol>
+              <li>Comprender la diferencia de paradigma entre procesamiento tradicional y distribuido: pensar en particiones,
+                DAGs y lazy evaluation en lugar de operaciones fila a fila</li>
+              <li>Diseñar pipelines de ML reproducibles donde el preprocesamiento y el modelo viajan juntos como un objeto 
+                único, eliminando data leakage entre train y test</li>
+              <li>Traducir métricas técnicas (AUC, Silhouette Score) en lenguaje de negocio accionable para stakeholders no técnicos</li>
+              <li>Aplicar una mentalidad data-driven desde la definición del problema: no construir modelos por construirlos,
+                 sino partir de preguntas de negocio claras</li>
+            </ol>
+        <p><strong>Métricas de impacto:</strong> Ej. optimización de tiempos, mejora en organización, mayor claridad en procesos.</p>
+        <p><strong>Habilidades aplicadas:</strong> 
+            Big Data · Apache Spark · PySpark · RDDs · DataFrames · Spark SQL · Machine Learning Escalable · Feature 
+            Engineering · Visualización de datos · Documentación técnica · Pensamiento analítico orientado a negocio</p>
+        <p><strong>Por qué elegí este proyecto:</strong> Este proyecto representa la intersección entre mi rol como 
+            Product Owner y mi enfoque data-driven: no solo ejecuté código, sino que tomé decisiones de diseño del 
+            pipeline justificadas desde el impacto de negocio. Elegí este caso porque demuestra capacidad para trabajar 
+            con tecnologías de escala real (Spark en entorno distribuido), formular preguntas de negocio antes de 
+            modelar, y comunicar los resultados técnicos de forma que un área de marketing pueda actuar sobre ellos.
+             Para un PO con mentalidad data-driven, la habilidad de entender cómo se construye y qué limita un pipeline
+              de datos es tan valiosa como saber priorizar un backlog: ambas requieren entender el problema antes de 
+              proponer la solución.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="section-title">Contacto</h2>
+      <p>Email: luisleonbarrera@gmail.com</p>
+      <p>
+        <a href="https://www.linkedin.com/in/luisleonbarrera/" target="_blank" class="btn btn-outline-primary m-2">LinkedIn</a>
+        <a href="https://github.com/luisleonb" target="_blank" class="btn btn-outline-dark m-2">GitHub</a>
+        <a href="#" target="_blank" class="btn btn-outline-success m-2">CV</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p class="mb-0">© 2026 Luis León Barrera
