@@ -1,0 +1,62 @@
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0d6efd, #0b3d91);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.card {
+  border: none;
+  border-radius: 16px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+  margin-top: 50px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 48px 16px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero .lead {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  #sobre-mi p,
+  #caso-estudio p,
+  #caso-estudio li {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+}
