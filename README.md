@@ -1,4 +1,4 @@
-#Luis León | Product Owner Data-Driven
+# Luis León | Product Owner Data-Driven
 
 Soy un Ingeniero Civil Industrial apasionado por la intersección entre la estrategia de producto y la ciencia de datos. Mi trayectoria me ha permitido entender que el éxito de un producto digital no solo reside en una ejecución ágil, sino en la capacidad de transformar grandes volúmenes de datos en decisiones estratégicas que generen valor real para el negocio y el usuario.
 
