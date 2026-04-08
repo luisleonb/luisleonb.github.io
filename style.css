@@ -1,94 +1,108 @@
+/* --- IMPORTACIÓN DE FUENTE (Opcional pero recomendada para el perfil) --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 body {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  font-family: 'Inter', sans-serif; /* Sugerencia para perfil moderno */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #333;
 }
 
 /* --- HERO SECTION --- */
 .hero {
-  background: linear-gradient(135deg, #0d6efd, #0b3d91);
-  color: white;
-  padding: 80px 20px;
-  text-align: center;
+    background: linear-gradient(135deg, #0d6efd, #0b3d91);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
 }
 
-/* --- SECCIÓN SOBRE MÍ (CENTRADOS) --- */
+.hero h1 {
+    font-weight: 700;
+}
+
+/* --- SECCIÓN SOBRE MÍ (ESTILO CIRCULAR Y CENTRADO) --- */
+#sobre-mi {
+    text-align: center; /* Centra título y párrafos */
+}
+
 .profile-photo-wrapper {
-  width: 220px;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 6px solid #ffffff;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  background-color: #e9ecef;
-  margin: 0 auto 20px auto; /* CLAVE: El "0 auto" centra el círculo horizontalmente */
+    width: 220px;
+    height: 220px; /* Obligatorio para asegurar el círculo */
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden; /* Recorta la imagen en forma de círculo */
+    border: 6px solid #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    background-color: #e9ecef;
+    margin: 0 auto 30px auto; /* Centra el contenedor y da espacio abajo */
+    display: block;
 }
 
 .profile-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita que la foto se estire, la recorta para llenar el círculo */
+    display: block;
 }
 
-#sobre-mi {
-  text-align: center; /* Centra el título y texto por defecto */
-}
-
-/* --- COMPONENTES --- */
+/* --- COMPONENTES Y TARJETAS --- */
 .section-title {
-  margin-bottom: 30px;
-  font-weight: 700;
+    margin-bottom: 30px;
+    font-weight: 700;
 }
 
 .card {
-  border: none;
-  border-radius: 16px;
-  transition: 0.3s ease; /* Movido aquí para que funcione al entrar y salir el mouse */
+    border: none;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Para que todas las tarjetas midan lo mismo */
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 footer {
-  background-color: #f8f9fa;
-  padding: 30px 0;
-  margin-top: 50px;
-  text-align: center;
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    margin-top: 60px;
+    text-align: center;
 }
 
-/* --- RESPONSIVE (CELULARES) --- */
+/* --- RESPONSIVE (MÓVIL) --- */
 @media (max-width: 768px) {
-  .hero {
-    padding: 48px 16px;
-  }
+    .hero {
+        padding: 48px 16px;
+    }
 
-  .hero h1 { font-size: 2rem; }
-  .section-title { font-size: 1.5rem; }
+    .hero h1 { font-size: 1.8rem; }
+    .section-title { font-size: 1.5rem; }
 
-  /* Mantenemos el texto centrado en celulares para coherencia con la foto arriba */
-  #sobre-mi p {
-    text-align: center; 
-    font-size: 1rem;
-    padding: 0 10px;
-  }
+    .profile-photo-wrapper {
+        width: 180px;
+        height: 180px;
+    }
 
-  .profile-photo-wrapper {
-    width: 180px; /* Un poco más pequeña en móvil */
-  }
+    #sobre-mi p {
+        text-align: center; /* Mantenemos centrado para armonía con la foto */
+        font-size: 1rem;
+        padding: 0 15px;
+    }
 
-  #caso-estudio p,
-  #caso-estudio li {
-    text-align: left; /* El caso de estudio sí es mejor leerlo alineado a la izquierda */
-  }
+    #caso-estudio p,
+    #caso-estudio li {
+        text-align: left; /* Contenido largo se lee mejor a la izquierda */
+    }
 }
 
 /* --- RESPONSIVE (DESKTOP) --- */
 @media (min-width: 992px) {
-  #sobre-mi p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-  }
+    #sobre-mi p {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        max-width: 800px; /* Evita que las líneas sean demasiado largas */
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
